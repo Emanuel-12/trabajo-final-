@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="login" onclick="iniciarSeccion()">login</button>
+    <button id="registrarse" onclick="registrarusuario()">registrarse</button>
+
+    <div id="prueba">
+
+    </div>
+    <script>
+      
+
+        const prueba = document.getElementById("prueba");
+
+        const login = document.getElementById("login");
+        const registrarse = document.getElementById("registrarse");
+
+        const iniciarSeccion = () => {
+            prueba.innerHTML = `  <form id="formulario2" action="./datos" method="post">
+        <div class="formulario">
+        
+          <div >
+            <label for="usuario">usuario:</label>
+            <input type="text" id="usario" name="usuario" required>
+          </div>
+          <!-- <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+          </div> -->
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <!-- <div>
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+          </div> -->
+          <div>
+            <label for="password"> password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <input type="submit" value="login">
+        </div>
+        </form>
+   `;
+        }
+        const registrarusuario = () => {
+            prueba.innerHTML = `  <form id="formulario2" action="./datos" method="post">
+        <div class="formulario">
+        
+          <div >
+            <label for="usuario">usuario:</label>
+            <input type="text" id="usario" name="usuario" required>
+          </div>
+          <!-- <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+          </div> -->
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <!-- <div>
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+          </div> -->
+          <div>
+            <label for="password"> password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <input type="submit" value="registrar">
+        </div>
+        </form>
+   `;
+        }
+
+    </script>
+</body>
+
+</html>

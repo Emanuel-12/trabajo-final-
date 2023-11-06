@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css"> 
+    <title>Plataforma de streaming</title>
+</head>
+<body>
+    <nav> 
+      <img src="./logo/logo2.png" alt="Logo">
+        <input type="text" placeholder="Buscar"> 
+        <button type="submit">Buscar</button>
+        <ul> 
+          <li><a href="/home">INICIO</a></li>
+          <li><a href="/peliculas">PELICULAS</a></li>
+          <li><a href="/series">SERIES</a></li>
+          <li><a href="/categoria">CATEGORIAS</a></li>
+          <li><a href="/perfil">PERFIL</a></li>
+      </ul> 
+      </nav>
+      <div class="contenedor">
+        <img src="./logo/logo2.png" alt="Logo">
+      </div>
+     
+    <div class="contenedorform">
+
+      <div id="prueba" ></div>
+      <div class="contenedorBotones">
+        
+        <button id="login" onclick="iniciarSeccion()">login</button>
+        <button id="registrarse" onclick="registrarusuario()">registrarse</button>
+      </div>
+      </div>
+
+      
+   
+    
+        <footer>
+        <div class="elfooter">
+          <a href="https://facebook.com" target="_blank"><img src="./imagnes/facebook.png"  alt="Facebook"></a>
+          <a href="https://twitter.com" target="_blank"><img src="./imagnes/Twitter.png" alt="Twitter"></a>
+          <a href="https://instagram.com" target="_blank"><img src="./imagnes/instagram.png" alt="Instagram"></a>
+        </div>
+      </footer>
+      <script>
+      
+
+        const prueba = document.getElementById("prueba");
+
+        const login = document.getElementById("login");
+        const registrarse = document.getElementById("registrarse");
+
+        const iniciarSeccion = () => {
+            prueba.innerHTML = `  <form id="formulario2" action="./datos" method="post">
+        <div class="formulario">
+        
+          <!--<div>
+            <label for="usuario">usuario:</label>
+            <input type="text" id="usario" name="usuario" required>
+          </div> -->
+          <!-- <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+          </div> -->
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <!-- <div>
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+          </div> -->
+          <div>
+            <label for="password"> password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <input type="submit" value="login">
+        </div>
+        </form>
+   `;
+        }
+        const registrarusuario = () => {
+            prueba.innerHTML = `  <form id="formulario2" action="./datos" method="post">
+        <div class="formulario">
+        
+          <div >
+            <label for="usuario">usuario:</label>
+            <input type="text" id="usario" name="usuario" required>
+          </div>
+          <!-- <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+          </div> -->
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <!-- <div>
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+          </div> -->
+          <div>
+            <label for="password"> password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <input type="submit" value="registrar">
+        </div>
+        </form>
+   `;
+        }
+
+    </script>
+      <!-- <script src="../app.js"></script> -->
+
+</body>
+</html>
